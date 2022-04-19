@@ -5,11 +5,10 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 18px;
     scroll-behavior: smooth;
 }
 /* header */
-header {
+/* header {
     padding: 10px 0px 0px 0px;
     height: 8%;
     position: fixed;
@@ -23,45 +22,35 @@ header {
     display: flex;
 }
 
-.container-logo {
-    margin-left: 10%; /* para hacer a la derecha el logo */
-}
-
-.logo {
+/* .logo {
     height: 50px;
 }
 .container-navbar {
     display: flex;
     margin-left: 10%;
-}
-.navbar-container { /* poner a display none cuando hagamos responsive */
-    display: flex;
-    width: 100%;
-}
-.navbar {
-    display: flex;
-    list-style: none;
-    align-items: center; /* para alinear de arriba a abajo en el centro */
+}  */*/
 
-    font-family: 'Lato', sans-serif;;
-}
-.navbar li a {
+/* .navbar li a {
     text-decoration: none;
     color: black;
 }
 .navbar li {
     margin-left: 20px;
-}
+} */
 
 
 /* comienza main */
 
-.main-container {
+.chava-cantando {
+    border-radius: 24px !important;
+}
+
+/* .main-container {
     display: flex;
     padding: 2% 10%;
     justify-content: center;
     align-items: center;
-}
+} */
 .texto-descripcion { /* para mover el texto al lado de la imagen  */
     margin-left: 10%;
     /* background: linear-gradient(to right, #0CDDEF 0%, #FFFFFF 100%); pienso en este fondo.. */ 
@@ -150,7 +139,7 @@ header {
 
 /*  EMPIEZA FOOTER */
 
-footer {
+/* footer {
     display: flex;
     padding: 20px;
     margin-top: 5%;
@@ -167,13 +156,13 @@ footer img {
     margin-left: 20px;
     width: 24px;
     height: 24px;
-}
-body {
+} */
+/* body {
     background: linear-gradient(-45deg, #ee7752, #23a6d5, #23d5ab);
 	background-size: 800% 800%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
-}
+} background animado */ 
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -214,37 +203,22 @@ body {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    .container-navbar {
-        display: none;
-    }
-    .navbar-container { /* poner a display none cuando hagamos responsive */
-        display: none;
-    }
-    .navbar {
-        display: none;
-    }
 
         
 }
 
-@media screen and (min-width: 968px) {
-    .menuhamburguesa {
-        display: none;
-    }
-        
-}
 
 /* inicia nuestros servicios */
 
-#section-servicios {
+/* #section-servicios {
     padding: 20%;
     height: 100%;
     width: 100%;
     display: grid;
     place-items: center;
     font-family: 'Kanit', sans-serif;
-}
-.row {
+} */
+/* .row {
     margin-top: 2%;
     display: flex;
     flex-wrap: wrap;
@@ -322,10 +296,10 @@ body {
         flex: 0 0 33.33%;
         max-width: 33.33%;
     }
-}
+} */
 
 /* aqui empieza el responsive y style de contacto */
-#wrapper
+/* #wrapper
 {
  margin:0 auto;
  margin-top: 5%;
@@ -469,10 +443,10 @@ margin-top: 20px;
  {
   width:80%;
  }
-}
+} */
 /* Clientes style */
 
-.container{
+/* .container{
     display: flex;
     width: 100%;
     justify-content: center;
@@ -517,4 +491,4 @@ margin-top: 20px;
     display: block;
     font-size: 15px;
     margin-bottom: 15px;
-}
+} */

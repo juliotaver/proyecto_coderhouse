@@ -4,113 +4,358 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="./img/favikon copia.png"> <!-- favicon del logo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- iconos -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> <!-- fuente que usare -->
-    <script src="https://kit.fontawesome.com/786f61351e.js" crossorigin="anonymous"></script> <!-- font awesome iconos -->
+      <!-- Google Fonts de bootstrap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+   <!-- Vendor CSS Files bootstrap  -->
+   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <!-- Variables CSS Files. Uncomment your preferred color scheme -->
+  <!-- <link href="assets/css/variables.css" rel="stylesheet"> -->
+  <link href="assets/css/variables-blue.css" rel="stylesheet">
+  <!-- <link href="assets/css/variables-green.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-orange.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-purple.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-red.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
     <title>JUYOW STUDIO</title>
 </head>
 <body>
-    <header class="container-header"> <!-- header con logo y barra de navegacion -->
-        <section class="container-logo"> <!-- container logo -->
-            <img src="./img/logoresizeazul.png" alt="Logo Juyow" class="logo">
-        </section>
-        <section class="container-navbar"> <!-- container de la navbar -->
-            <div class="navbar-container"> <!-- container navbar  -->
-                <ul class="navbar"> <!-- navbar -->
-                    <li><a href="./index.html">Quienes Somos?</a></li>  
-                    <li><a href="#">Nuestros Servicios</a></li>    
-                    <li><a href="./clientes.html">Clientes</a></li>    
-                    <li><a href="./contacto.html">Contacto</a></li>    
-                    <li><a href="./galeria.html">Galeria de Fotos</a></li>
-                </ul>
-            </div>
-        </section>
-    </header>
-    <main>
-    <section id="section-servicios">
-        <div class="row"> <!-- empieza la tabla para nuestros servicios -->
-            <h2 class="section-heading">
-                Nuestros Servicios
-            </h2>
+    <header id="header" class="header fixed-top" data-scrollto-offset="0"> <!-- inicia navegacion -->
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+    
+          <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="img/logoresizeazul.png" alt="logo">
+          </a>
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+    
+    
+              <li><a class="nav-link scrollto" href="./index.html">Acerca de Nosotros</a></li>
+              <li><a class="nav-link scrollto" href="#">Nuestros Servicios</a></li>
+              <li><a class="nav-link scrollto" href="./clientes.html">Clientes</a></li>
+              <li><a class="nav-link scrollto" href="./galeria.html">Galeria</a></li>
+              <li><a class="nav-link scrollto" href="./contacto.html">Contacto</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle d-none"></i>
+          </nav><!-- .navbar -->
+    
+          <a class="btn-getstarted scrollto" href="index.html#about">Agenda tu cita</a>
+    
         </div>
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <div class="icon-wrapper">
-                        <i class="fa-solid fa-microphone"></i>
-                    </div>
-                    <h3>Grabación de voz</h3>
-                    <p>Contamos con el mejor equipo de instrumentos para grabar una voz totalmente natural y calida, y recibir la mejor fidelidad posible.
-                    </p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="icon-wrapper">
-                        <i class="fa-solid fa-backward"></i>
-                    </div>
-                    <h3>Sonido 360</h3>
-                    <p>
-                        Contamos con los mejores parlantes a nivel nacional, para escuchar tus proyectos con la mejor calidad mundial.
-                    </p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="icon-wrapper">
-                        <i class="fa-solid fa-bag-shopping"></i>
-                    </div>
-                    <h3>Seguridad total</h3>
-                    <p>
-                        Somos una empresa comprometida con la seguridad de su equipo de trabajo y con los mejores contratos para evitar la filtracion de cualquier dato musical.
-                    </p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="icon-wrapper">
-                        <i class="fa-solid fa-ban"></i>
-                    </div>
-                    <h3>Stress-Free</h3>
-                    <p>
-                        Contamos con el servicio completo desde escritura musical, hasta masterizacion final, dandote a ti el control total ya sea de creatividad, o solo dedicate a cantar!
-                    </p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="icon-wrapper">
-                        <i class="fa-solid fa-bolt"></i>
-                    </div>
-                    <h3>24 Horas disponibles</h3>
-                    <p>
-                        Contamos con servicio las 24 horas, no detendremos tu animo nunca! 
-                    </p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="icon-wrapper">
-                        <i class="fa-solid fa-brain"></i>
-                    </div>
-                    <h3>Management</h3>
-                    <p>
-                        Necesitas el equipo de manejo perfecto? Nosotros contamos con el
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+      </header><!-- End Header -->
 
-    </main>
-    <footer> <!-- inicia footer -->
-        <p>JUYOW STUDIOS &copy;TODOS LOS DERECHOS RESERVADOS</p>
-        <img src="./img/facebooklogo.png" alt="facebook">
-        <img src="./img/logoinstagram.png" alt="instagram">
-    </footer>
-</body>
-</html>
+    <!-- ======= seccion video con descripcion ======= -->
+    <main>
+        <section id="onfocus" class="onfocus">
+            <div class="container-fluid p-0" data-aos="fade-up" style="margin-top: 100px;">
+      
+              <div class="row g-0">
+                <div class="col-lg-6 video-play position-relative">
+                  <a href="https://www.youtube.com/watch?v=3nyhkMdGS6E" class="glightbox play-btn"></a>
+                </div>
+                <div class="col-lg-6">
+                  <div class="content d-flex flex-column justify-content-center h-100">
+                    <h3>En JUYOW STUDIO Tenemos todo lo necesario para la creacion de tu proyecto musical.</h3>
+                    <p class="fst-italic">
+                      Contamos con tecnología de punta para satisfacer completamente tus necesidades en cuestiones musicales.
+                    </p>
+                    <ul>
+                      <li><i class="bi bi-check-circle"></i> Ultima actualización de nuestro equipo: Abril 2022.</li>
+                      <li><i class="bi bi-check-circle"></i> Disponibilidad inmediata</li>
+                      <li><i class="bi bi-check-circle"></i> Puedes visitar nuestro estudio en una guia 3d para conocer cada rincon del sitio magico.</li>
+                    </ul>
+                    <a href="./nuestrosservicios.html#features" class="read-more align-self-start"><span>Leer más...</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </section>
+    </main> <!-- acaba seccion video con descripcion -->
+  
+      <!-- ======= Features Section ======= -->
+      <section id="features" class="features">
+        <div class="container" data-aos="fade-up">
+  
+          <ul class="nav nav-tabs row gy-4 d-flex">
+  
+            <li class="nav-item col-6 col-md-4 col-lg-2">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+                <i class="bi bi-binoculars color-cyan"></i>
+                <h4>Grabacion Profesional</h4>
+              </a>
+            </li><!-- End Tab 1 Nav -->
+  
+            <li class="nav-item col-6 col-md-4 col-lg-2">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+                <i class="bi bi-box-seam color-indigo"></i>
+                <h4>Masterizacion</h4>
+              </a>
+            </li><!-- End Tab 2 Nav -->
+  
+            <li class="nav-item col-6 col-md-4 col-lg-2">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+                <i class="bi bi-brightness-high color-teal"></i>
+                <h4>Management Profesional</h4>
+              </a>
+            </li><!-- End Tab 3 Nav -->
+  
+            <li class="nav-item col-6 col-md-4 col-lg-2">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+                <i class="bi bi-command color-red"></i>
+                <h4>Grabacion de videos</h4>
+              </a>
+            </li><!-- End Tab 4 Nav -->
+  
+            <li class="nav-item col-6 col-md-4 col-lg-2">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
+                <i class="bi bi-easel color-blue"></i>
+                <h4>Ghost-Writing</h4>
+              </a>
+            </li><!-- End Tab 5 Nav -->
+  
+            <li class="nav-item col-6 col-md-4 col-lg-2">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
+                <i class="bi bi-map color-orange"></i>
+                <h4>Creación Completa</h4>
+              </a>
+            </li><!-- End Tab 6 Nav -->
+  
+          </ul>
+  
+          <div class="tab-content">
+  
+            <div class="tab-pane active show" id="tab-1">
+              <div class="row gy-4">
+                <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                  <h3>Grabacion Profesional</h3>
+                  <p class="fst-italic">
+                    Contamos con el mejor equipo para poder grabar voz, instrumentos y sintetizadores con la mejor calidad disponible.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle-fill"></i> Certificacion realtek-audio.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Microfonos Senheiser-2022.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Mando de instrumentos Specialized-2022.</li>
+                  </ul>
+                  <p>
+                    Nuestros ingenieros estan a a la altura de nuestros instrumentos.
+                  </p>
+                </div>
+                <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                  <img src="assets/img/features-1.svg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div><!-- End Tab Content 1 -->
+  
+            <div class="tab-pane" id="tab-2">
+              <div class="row gy-4">
+                <div class="col-lg-8 order-2 order-lg-1">
+                  <h3>Masterizacion</h3>
+                  <p>
+                    Si ya tienes tu grabacion lista, podemos mejorar la calidad de tu muestra totalmente.
+                  </p>
+                  <p class="fst-italic">
+                    Nuestros ingenieros analizaran tu propuesta, y te daran la mejor opción disponible
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle-fill"></i> Masterizacion total.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Masterizacion de voz.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Re-grabado para masterizar.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Equipo disponible express para masterizacion en poco tiempo.</li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 order-1 order-lg-2 text-center">
+                  <img src="assets/img/features-2.svg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div><!-- End Tab Content 2 -->
+  
+            <div class="tab-pane" id="tab-3">
+              <div class="row gy-4">
+                <div class="col-lg-8 order-2 order-lg-1">
+                  <h3>Management Profesional</h3>
+                  <p>
+                    Necesitas un manejo profesional? Contamos con profesionales que impulsaran tu carrera
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle-fill"></i> Profesionales disponibles para manejarte.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Equipo de abogados especializados en manejo de artistas.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Claridad total desde el principio</li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 order-1 order-lg-2 text-center">
+                  <img src="assets/img/features-3.svg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div><!-- End Tab Content 3 -->
+  
+            <div class="tab-pane" id="tab-4">
+              <div class="row gy-4">
+                <div class="col-lg-8 order-2 order-lg-1">
+                  <h3>Grabacion de videos</h3>
+                  <p>
+                    Ya tienes la pista y necesitas un video para impulsar la canción?
+                  </p>
+                  <p class="fst-italic">
+                    Contamos con el mejor equipo de fotografia y video para generar contenido unico.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle-fill"></i> Camaras con grabacion en 8k.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Directores expertos en videos musicales.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Manejamos tus plataformas digitales.</li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 order-1 order-lg-2 text-center">
+                  <img src="assets/img/features-4.svg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div><!-- End Tab Content 4 -->
+  
+            <div class="tab-pane" id="tab-5">
+              <div class="row gy-4">
+                <div class="col-lg-8 order-2 order-lg-1">
+                  <h3>Ghost-Writing</h3>
+                  <p>
+                    Tienes la voz pero no el lapiz?
+                  </p>
+                  <p class="fst-italic">
+                    Contamos con escritores con una lista de exitos inigualables.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle-fill"></i> Te pueden escribir desde un parrafo hasta una cancion entera.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Todos los derechos seran tuyos.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Privacidad total.</li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 order-1 order-lg-2 text-center">
+                  <img src="assets/img/features-5.svg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div><!-- End Tab Content 5 -->
+  
+            <div class="tab-pane" id="tab-6">
+              <div class="row gy-4">
+                <div class="col-lg-8 order-2 order-lg-1">
+                  <h3>Creación COMPLETA</h3>
+                  <p>
+                    NUESTRO SERVICIO ESTRELLA
+                  </p>
+                  <p class="fst-italic">
+                    Danos tu idea, y nosotros de organizamos el proyecto.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle-fill"></i> Grabacion de voz y de instrumentos.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Manejo y promocion del proyecto.</li>
+                    <li><i class="bi bi-check-circle-fill"></i> NOS ENCARGAMOS COMPLETAMENTE DE TODO.</li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 order-1 order-lg-2 text-center">
+                  <img src="assets/img/features-6.svg" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div><!-- End Tab Content 6 -->
+  
+          </div>
+  
+        </div>
+      </section><!-- End Features Section -->
+    <!-- EMPIEZA FOOTER AQUI  -->
+    <footer id="footer" class="footer">
+
+        <div class="footer-content">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-info">
+                  <h3>JUYOW STUDIOS</h3>
+                  <p>
+                    Av. Homero 425, Polanco, <br>
+                    Miguel Hidalgo, 11560 Ciudad de México, CDMX <br><br>
+                    <strong>Telefono:</strong> +52 562 985 131 6<br>
+                    <strong>Email:</strong> info@juyow.com<br>
+                  </p>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-6 footer-links"> <!-- NAV DE FOOTER -->
+                <h4>IR A</h4>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">Acerca de nosotros</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">Nuestros servicios</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">Clientes</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">Galeria</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">Terminos y condiciones</a></li>
+                </ul>
+              </div>
+    
+            
+    
+              <div class="col-lg-6 col-md-6 footer-newsletter">
+                <h4>Suscribete al boletín</h4>
+                <p>Cada semana compartimos lo mas actual de la música.</p>
+                <form action="" method="post">
+                  <input type="email" name="email"><input type="submit" value="Subscribe">
+                </form>
+    
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-legal text-center">
+          <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+    
+            <div class="d-flex flex-column align-items-center align-items-lg-start">
+              <div class="copyright">
+                &copy; Copyright <strong><span>JUYOW STUDIOS</span></strong>. Todos los derechos reservados.
+              </div>
+              
+            </div>
+    
+            <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+    
+          </div>
+        </div>
+    
+      </footer><!-- End Footer -->
+      <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+      <div id="preloader"></div>
+    
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+    
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
+  </body>
+  </html>
